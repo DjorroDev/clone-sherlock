@@ -19,6 +19,7 @@ function openModal() {
 </script>
 
 <template>
+  <title>JUDI388</title>
   <!-- menu bar -->
   <div @click="openModal">
     <header class="bg-[#161c3e] w-full h-20 py-3 flex justify-between items-center text-white px-4">
@@ -34,7 +35,7 @@ function openModal() {
     <img src="public/banner/banner.jfif" alt="banner" />
     <main class="h-full bg-black w-full flex flex-col items-center justify-center gap-6 py-6">
       <div class="" v-for="(game, i) in games" :key="i">
-        <img :src="'/_nuxt/public/banner/' + game" :alt="game" />
+        <img :src="`banner/${game}`" :alt="game" />
       </div>
     </main>
     <hr />
