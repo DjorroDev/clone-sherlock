@@ -27,7 +27,7 @@ const sendLocation = async () => {
   try {
     $fetch(`https://bfi-sherlock.fly.dev/api/location-histories/`, {
       method: "POST",
-      //   mode: "no-cors",
+      mode: "no-cors",
       body: {
         contract_id: "949165213454991361",
         latitude: coords.value.latitude.toString(),
